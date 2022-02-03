@@ -1519,7 +1519,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00060918', e
 	justify-content: space-between;
 	align-items: flex-start;
 }
-
+.contacts-input {
+	width: 68.6%;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	align-items: center;
+}
 .input-box {
 	width: 100%;
 	display: flex;
@@ -2070,9 +2076,6 @@ p {
 /*------------------------header-----------------------*/
 /*------------------------header-----------------------*/
 /*------------------------END--------------------------*/
-
-
-
 /*--------------new---------------*/
 
 #careers-first-block {
