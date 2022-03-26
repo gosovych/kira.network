@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<head>
+<html lang="en">
+	<head>
 	<meta charset="utf-8">
 	<meta name="theme-color" content="#272738">
 	<meta name="msapplication-navbutton-color" content="#00B473">
@@ -27,16 +28,17 @@
         <div class="section-nav">
 			<div class="logo-mob"><img src="images/logo.svg" alt=""></div>
             <ul class="section-menu  _anim-items _anim-no-hide">
-              <li><a href="about.html">About</a></li>
+              <li><a id="about" href="about.html">About</a></li>
               <li><a href="technology.html">TECHNOLOGY</a></li>
               <li><a href="team.html">TEAM</a></li>
               <li><a href="blog.html">BLOG</a></li>
 			  <li><a href="careers.html">CAREERS</a></li>
             </ul>
           <div class="lang select _anim-items _anim-no-hide">
-      			<a href="#" class="trigger">EN</a>
+      			<a rel="canonical" href="https://kira.network" class="trigger">EN</a>
       			<div class="select-popup">
-      				<a href="#">漢語</a>
+						<a rel="alternate" hreflang="ru" href="https://kira.network/ru">RU</a>
+      				<a rel="alternate" href="#">漢語</a>
 			     </div>
 		  </div>
 			<div class="start-link mob-start-link"><a href="https://testnet.kira.network" target="_blank" target="_blank" class="start-link-btn"><span>Join Testnet</span></a></div>
@@ -351,7 +353,6 @@
     	</div>
     </div>
 </div>
-
 
 <script src="js/jquery-3.6.0.min.js"></script>
 <script src="js/swiper-bundle.min.js"></script>
