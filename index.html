@@ -28,7 +28,7 @@
         <div class="section-nav">
 			<div class="logo-mob"><img src="images/logo.svg" alt=""></div>
             <ul class="section-menu  _anim-items _anim-no-hide">
-              <li><a id="about" href="about.html">About</a></li>
+              <li><a id="div1" href="about.html">About</a></li>
               <li><a href="technology.html">TECHNOLOGY</a></li>
               <li><a href="team.html">TEAM</a></li>
               <li><a href="blog.html">BLOG</a></li>
@@ -357,5 +357,26 @@
 <script src="js/jquery-3.6.0.min.js"></script>
 <script src="js/swiper-bundle.min.js"></script>
 <script src="js/script.js"></script>
+<script>
+	var language; 
+	function getLanguage() {
+	(localStorage.getItem('language') == null) ? setLanguage('en') : false;
+	$.ajax({ 
+	url:  '/language/' +  localStorage.getItem('language') + '.json', 
+	dataType: 'json', async: false, dataType: 'json', 
+	success: function (lang) { language = lang } });
+	}
+	
+	function setLanguage(lang) {
+	localStorage.setItem('language', lang);
+	}
+	</script>
+    <script>
+
+    $(document).ready(function(){
+    $('#div1').text(language.date);
+    });
+
+    </script>
 </body>
 </html>
